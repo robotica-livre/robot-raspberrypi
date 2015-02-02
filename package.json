@@ -1,7 +1,15 @@
 {
   "name": "robot-raspberrypi",
   "version": "0.0.0",
-  "private": true,
+  "author": {
+	  "name": "Ricardo Martinelli de Oliveira",
+	  "email": "ricardo.martinelli.oliveira@gmail.com",
+	  "url": "http://roboticalivre.ricardo.martinelli.nom.br"
+  },
+  "preferGlobal": true,
+  "bugs": {
+	  "url": "https://github.com/robotica-livre/robot-raspberrypi/issues"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -12,6 +20,10 @@
     "express": "~4.11.1",
     "jade": "~1.9.1",
     "morgan": "~1.5.1",
-    "serve-favicon": "~2.2.0"
+    "serve-favicon": "~2.2.0",
+    "raspirobot": "~1.0.0"
+  },
+  "bin": {
+	  "robotpi": "npm start"
   }
 }
