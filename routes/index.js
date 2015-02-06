@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-var robot = require("raspirobot");
-robot.setup();
+var RaspiRobot = require("raspirobot").RaspiRobot, // Import the library
+robot = new RaspiRobot();
 
-robot.setup();
+robot.setup(); // Set up GPIO ports
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

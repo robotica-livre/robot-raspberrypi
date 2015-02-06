@@ -1,6 +1,6 @@
 {
   "name": "robot-raspberrypi",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": {
 	  "name": "Ricardo Martinelli de Oliveira",
 	  "email": "ricardo.martinelli.oliveira@gmail.com",
@@ -23,7 +23,5 @@
     "serve-favicon": "~2.2.0",
     "raspirobot": "~1.0.0"
   },
-  "bin": {
-	  "robotpi": "npm start"
-  }
+  "bin": "./bin/www"
 }
