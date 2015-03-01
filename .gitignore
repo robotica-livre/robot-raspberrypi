@@ -4,3 +4,4 @@ node_modules/*
 .pydevproject
 .settings
 .settings/*
+target/
