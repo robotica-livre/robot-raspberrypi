@@ -1,8 +1,8 @@
 import vertx
-from core.event_bus import EventBus
 
-def handler(msg):
-    msg.reply('pong!')
-    print 'sent back pong Python!'
+web_server_conf = {
+    'port': 8080,
+    'host': 'localhost'    
+}
 
-EventBus.register_handler('ping-address', handler=handler)
+vertx.deploy_verticle('io.vertx~mod-web-server~2.0.0-final', web_server_conf)
