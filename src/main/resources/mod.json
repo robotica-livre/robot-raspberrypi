@@ -1,7 +1,7 @@
 {
 
   // Python verticle
-  "main": "ping_verticle.py",
+  "main": "robot.py",
 
 
   // If your module is going to be registered in the Vert.x module registry you will also need the following
