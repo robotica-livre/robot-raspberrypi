@@ -1,28 +1,38 @@
 import vertx
 from core.event_bus import EventBus
+from robot import SimpleDrive
 
 web_server_conf = {
-    'port': 8080,
+    'port': 1234,
     'host': 'localhost',
-    'web_root': '../webapp'
+    'web_root': '../webapp',
 
-    'bridge': True
+    'bridge': True,
 
     'inbound_permitted': [
         {
-            'address': 'drive.forward'
+            'vertx.forward': 'drive.forward'
         },
         {
-            'address': 'drive.backward'
+            'vertx.backward': 'drive.backward'
         },
         {
-            'address': 'drive.left'
+            'drive.left': 'drive.left'
         },
         {
-            'address': 'drive.right'
+            'drive.right': 'drive.right'
         },
     ]
 }
+
+robot = SimpleDrive()
+
+EventBus.send('vertx.forward', None, robot.forward)
+EventBus.send('vertx.backward', None, robot.backward)
+EventBus.send('vertx.left', None, robot.left)
+EventBus.send('vertx.right', None, robot.right)
+
+
 
 logger = vertx.logger()
 
