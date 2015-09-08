@@ -6,7 +6,13 @@ from setuptools import setup
 pkgname = "robot-raspberrypi"
 version = "0.0.1"
 
+install_requires = [
+    "",
+]
 
+tests_require = [
+    "pytest",
+]
 
 metadata = {
     "name": pkgname,
@@ -14,10 +20,10 @@ metadata = {
     "author": "Ricardo M. Oliveira",
     "author_email": "",
     "url": "http://github.com/robotica-livre/robot-raspberrypi",
-    "description": ""
+    "description": "",
+    "include_package_data": True,
+    "install_requires": install_requires,
+    "tests_require": tests_require
 }
-
-
-
 
 setup(**metadata)
