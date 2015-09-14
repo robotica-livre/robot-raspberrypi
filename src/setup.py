@@ -18,7 +18,7 @@ metadata = {
     "name": pkgname,
     "version": version,
     "author": "Ricardo M. Oliveira",
-    "author_email": "",
+    "author_email": "ricardo.martinelli.oliveira@gmail.com",
     "url": "http://github.com/robotica-livre/robot-raspberrypi",
     "description": "",
     "include_package_data": True,
