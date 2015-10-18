@@ -1,7 +1,26 @@
-from robotraspiberrypi.robot import robot
+from robot import *
 
-def drive():
-    return "Not Implemented"
+direction = {
+    1 : forward,
+    2 : left,
+    3 : right,
+    4 : backward,
+} 
+
+def drive(left = 255, right = 255, dir):
+    direction[dir](left, right);
+    
+def forward(left, right):
+    robot.set_motors(left, 0, right, 0)
+
+def left(left, right):
+    robot.set_motors(left, 1, right, 0)
+
+def right(left, right):
+    robot.set_motors(left, 0, right, 1)
+
+def backward(left, right):
+    robot.set_motors(left, 1, right, 1)
 
 def line_following():
     Kp = 1 / 20
