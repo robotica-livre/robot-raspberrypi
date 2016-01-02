@@ -3,12 +3,14 @@ Created on 18 de out de 2015
 
 @author: Ricardo
 '''
+import web
+
 urls = {
-    '/(.*)', 'Robot'
+    '/(.*)', 'RobotServer'
 }
 
 app = web.application(urls, globals())
 
-class Robot:
+class RobotServer:
     def GET(self):
         return "Robot Raspberry Pi"
