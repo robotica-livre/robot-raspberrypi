@@ -6,7 +6,7 @@ Created on 18 de out de 2015
 import web
 
 urls = {
-    '/(.*)', 'RobotServer'
+    '/', 'RobotServer'
 }
 
 app = web.application(urls, globals())
