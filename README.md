@@ -13,4 +13,3 @@ O hardware é simples e pode ser comprado em qualquer loja. Todo o cérebro ficará
 
 #Software
 A linguagem usada foi o Python, uma vez que a biblioteca do RaspiRobot Board foi escrita nessa linguagem.
-
