@@ -49,4 +49,4 @@ def read_sensors():
     GPIO.setup(22, GPIO.IN)
     GPIO.setup(23, GPIO.IN)
     GPIO.setup(24, GPIO.IN)
-    return "Not implemented"
+    return "Not yet implemented"

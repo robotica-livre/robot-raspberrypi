@@ -9,6 +9,7 @@ def webServer():
     app.run()
 
 if __name__ == "__main__":
+#     env['web.config.debug'] = True
     if len(sys.argv) > 0:
         for arg in sys.argv:
             if arg == "--web":
